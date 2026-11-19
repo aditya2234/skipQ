@@ -1,0 +1,14 @@
+target/
+**/target/
+*.class
+node_modules/
+frontend/dist/
+frontend/.vite/
+.env
+.env.*.local
+application-local.yml
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

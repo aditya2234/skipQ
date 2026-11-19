@@ -1,0 +1,1 @@
+-- Initial schema migrations will be added with the first domain feature.

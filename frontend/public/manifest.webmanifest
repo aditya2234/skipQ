@@ -1,0 +1,8 @@
+{
+  "name": "QR Order",
+  "short_name": "QR Order",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6b50"
+}
