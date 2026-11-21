@@ -1,3 +1,3 @@
 # order
 
-Backend order library. Add code under `com.qrorder.order`. This module is assembled by `backend/app`.
+Backend order library. Add code under `com.skipq.order`. This module is assembled by `backend/app`.

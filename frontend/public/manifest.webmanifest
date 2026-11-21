@@ -1,6 +1,6 @@
 {
-  "name": "QR Order",
-  "short_name": "QR Order",
+  "name": "skipQ",
+  "short_name": "skipQ",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
