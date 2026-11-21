@@ -1,3 +1,3 @@
 # notification
 
-Backend notification library. Add code under `com.qrorder.notification`. This module is assembled by `backend/app`.
+Backend notification library. Add code under `com.skipq.notification`. This module is assembled by `backend/app`.
