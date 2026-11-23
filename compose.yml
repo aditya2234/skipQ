@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: wish_db
+      POSTGRES_USER: wish_user
+      POSTGRES_PASSWORD: wish_password
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wish_user -d wish_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/wish_db
+      SPRING_DATASOURCE_USERNAME: wish_user
+      SPRING_DATASOURCE_PASSWORD: wish_password
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy

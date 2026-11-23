@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://ep-wandering-shape-at2kdcfs-pooler.c-9.us-east-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_91oRXMxcLdgs&sslmode=require&channelBinding=require}
+    username: ${SPRING_DATASOURCE_USERNAME:neondb_owner}
+    password: ${SPRING_DATASOURCE_PASSWORD:npg_91oRXMxcLdgs}
+  jpa:
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:update}
+    show-sql: ${SPRING_JPA_SHOW_SQL:true}
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
